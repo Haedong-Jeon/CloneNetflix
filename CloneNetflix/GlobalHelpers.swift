@@ -17,6 +17,27 @@ let exampleMoive6 = Movie(id: UUID().uuidString, name: "AfterLife", thumbnailURL
 
 let exampleMovies: [Movie] = [exampleMoive1, exampleMoive2, exampleMoive3, exampleMoive4, exampleMoive5, exampleMoive6]
 
+func getRandomMovie() -> Movie {
+    let exampleMovieNum: Int = Int.random(in: 1 ... 5)
+    switch exampleMovieNum {
+        case 1:
+            return exampleMoive1
+        case 2:
+            return exampleMoive2
+        case 3:
+            return exampleMoive3
+        case 4:
+            return exampleMoive4
+        case 5:
+            return exampleMoive5
+        case 6:
+            return exampleMoive6
+        default:
+            return exampleMoive1
+    }
+}
+
 extension LinearGradient {
     static let blackOpacityGradient = LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.0),Color.black.opacity(0.95)]),startPoint: .top,endPoint: .bottom)
 }
+
