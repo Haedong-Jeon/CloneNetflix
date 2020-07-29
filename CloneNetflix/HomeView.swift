@@ -17,10 +17,12 @@ struct HomeView: View {
             
             ScrollView(showsIndicators: false) {
                 LazyVStack {//메인 VStack
+                    TopRowButtons()
                     TopMoviePreview(movie: getRandomMovie())
                         .frame(width: screen.width)
                         .padding(.top, -110)
-                        
+                        .zIndex(-1)
+                    
                     ForEach(vm.allCategories, id: \.self) { category in
                         VStack {
                             HStack {
@@ -50,5 +52,45 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+    }
+}
+
+struct TopRowButtons: View {
+    var body: some View {
+        HStack {
+            Button(action: {
+                //
+            }, label: {
+                Image("net_logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 35)
+            })
+            .buttonStyle(PlainButtonStyle())
+            Spacer()
+            Button(action: {
+                //
+            }, label: {
+                Text("TV 프로그램")
+            })
+            .buttonStyle(PlainButtonStyle())
+            Spacer()
+            Button(action: {
+                //
+            }, label: {
+                Text("영화")
+            })
+            .buttonStyle(PlainButtonStyle())
+            Spacer()
+            Button(action: {
+                //
+            }, label: {
+                Text("내가 찜한 콘텐츠")
+            })
+            .buttonStyle(PlainButtonStyle())
+            Spacer()
+        }
+        .padding(.leading, 10)
+        .padding(.trailing, 30)
     }
 }
