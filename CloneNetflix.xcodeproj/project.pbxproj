@@ -19,6 +19,7 @@
 		E9A7270A24D0F56300AE1A78 /* StandardHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7270924D0F56300AE1A78 /* StandardHomeMovie.swift */; };
 		E9A7270C24D0F61100AE1A78 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7270B24D0F61100AE1A78 /* GlobalHelpers.swift */; };
 		E9A7270E24D0F8DF00AE1A78 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7270D24D0F8DF00AE1A78 /* HomeVM.swift */; };
+		E9A7271024D10B8B00AE1A78 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7270F24D10B8B00AE1A78 /* TopMoviePreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		E9A7270924D0F56300AE1A78 /* StandardHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovie.swift; sourceTree = "<group>"; };
 		E9A7270B24D0F61100AE1A78 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		E9A7270D24D0F8DF00AE1A78 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		E9A7270F24D10B8B00AE1A78 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				E9A726D724D0F20600AE1A78 /* CloneNetflixApp.swift */,
 				E9A726D924D0F20600AE1A78 /* ContentView.swift */,
 				E9A7270224D0F22300AE1A78 /* HomeView.swift */,
+				E9A7270F24D10B8B00AE1A78 /* TopMoviePreview.swift */,
 				E9A7270D24D0F8DF00AE1A78 /* HomeVM.swift */,
 				E9A7270724D0F4BC00AE1A78 /* Movie.swift */,
 				E9A7270924D0F56300AE1A78 /* StandardHomeMovie.swift */,
@@ -287,6 +290,7 @@
 				E9A7270E24D0F8DF00AE1A78 /* HomeVM.swift in Sources */,
 				E9A726DA24D0F20600AE1A78 /* ContentView.swift in Sources */,
 				E9A7270A24D0F56300AE1A78 /* StandardHomeMovie.swift in Sources */,
+				E9A7271024D10B8B00AE1A78 /* TopMoviePreview.swift in Sources */,
 				E9A7270824D0F4BC00AE1A78 /* Movie.swift in Sources */,
 				E9A726D824D0F20600AE1A78 /* CloneNetflixApp.swift in Sources */,
 			);
