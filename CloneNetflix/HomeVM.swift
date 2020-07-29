@@ -19,8 +19,11 @@ class HomeVM: ObservableObject {
         setupMovies()
     }
     func setupMovies() {
-        movies["trending now"] = exampleMovies
-        movies["Stand-Up Comedy"] = exampleMovies.shuffled()
-
+        movies["내가 찜한 콘텐츠"] = exampleMovies
+        movies["지금 뜨는 콘텐츠"] = exampleMovies.shuffled()
+        movies["TV 프로그램 음모"] = exampleMovies.shuffled()
+        movies["미국 TV 프로그램 수상작"] = exampleMovies.shuffled()
+        movies["다시보기 추천 콘텐츠"] = exampleMovies.shuffled()
+        movies["Netflix 오리지널"] = exampleMovies.shuffled()
     }
 }
