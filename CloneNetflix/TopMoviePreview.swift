@@ -31,6 +31,7 @@ struct TopMoviePreview: View {
                     ForEach(movie.cateogires, id: \.self) { category in
                         HStack {
                             Text(category)
+                                .font(.footnote)
                             if !isCategoryLast(category) {
                                 Image(systemName: "circle.fill")
                                     .foregroundColor(.blue)
@@ -39,8 +40,27 @@ struct TopMoviePreview: View {
                         }
                     }
                 }
-                Text("row of buttons")
+                HStack {
+                    Spacer()
+                    SmallVerticalButton(text: "내가 찜한 콘텐츠", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
+                        //MARK: - 재생목록에 추가하기
+                    }
+                    Spacer()
+                    WhiteButton(text: "재생", imageName: "play.fill") {
+                        //MARK: - 재생
+                    }
+                    .frame(width: 120)
+                    Spacer()
+                    SmallVerticalButton(text: "정보", isOnImage: "info.circle", isOffImage: "plus", isOn: true) {
+                        //MARK: - 상세 정보 표시하기
+                    }
+                    Spacer()
+                }
             }
+            .background(
+                LinearGradient.blackOpacityGradient
+                .padding(.top, 300)
+            )
         }
         .foregroundColor(.white)
     }
