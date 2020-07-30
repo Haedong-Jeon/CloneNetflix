@@ -46,7 +46,7 @@ struct TopMoviePreview: View {
                         //MARK: - 재생목록에 추가하기
                     }
                     Spacer()
-                    WhiteButton(text: "재생", imageName: "play.fill") {
+                    PlayButton(text: "재생", imageName: "play.fill") {
                         //MARK: - 재생
                     }
                     .frame(width: 120)
