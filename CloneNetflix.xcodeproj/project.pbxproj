@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E957C79A24D27E9800743E7C /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957C79924D27E9800743E7C /* MovieDetailView.swift */; };
+		E957C79E24D2858F00743E7C /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957C79D24D2858F00743E7C /* Episode.swift */; };
 		E9A726D824D0F20600AE1A78 /* CloneNetflixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A726D724D0F20600AE1A78 /* CloneNetflixApp.swift */; };
 		E9A726DA24D0F20600AE1A78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A726D924D0F20600AE1A78 /* ContentView.swift */; };
 		E9A726DC24D0F20600AE1A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A726DB24D0F20600AE1A78 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		E957C79924D27E9800743E7C /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		E957C79D24D2858F00743E7C /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		E9A726D424D0F20600AE1A78 /* CloneNetflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloneNetflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A726D724D0F20600AE1A78 /* CloneNetflixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloneNetflixApp.swift; sourceTree = "<group>"; };
 		E9A726D924D0F20600AE1A78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				E9A7270724D0F4BC00AE1A78 /* Movie.swift */,
+				E957C79D24D2858F00743E7C /* Episode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9A7270C24D0F61100AE1A78 /* GlobalHelpers.swift in Sources */,
+				E957C79E24D2858F00743E7C /* Episode.swift in Sources */,
 				E9A7270324D0F22300AE1A78 /* HomeView.swift in Sources */,
 				E9A7270E24D0F8DF00AE1A78 /* HomeVM.swift in Sources */,
 				E9A726DA24D0F20600AE1A78 /* ContentView.swift in Sources */,
