@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9278E0124D2DAC6009C9D43 /* CustomTapSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9278E0024D2DAC6009C9D43 /* CustomTapSwitcher.swift */; };
 		E957C79A24D27E9800743E7C /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957C79924D27E9800743E7C /* MovieDetailView.swift */; };
 		E957C79E24D2858F00743E7C /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957C79D24D2858F00743E7C /* Episode.swift */; };
 		E9A726D824D0F20600AE1A78 /* CloneNetflixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A726D724D0F20600AE1A78 /* CloneNetflixApp.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E9278E0024D2DAC6009C9D43 /* CustomTapSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTapSwitcher.swift; sourceTree = "<group>"; };
 		E957C79924D27E9800743E7C /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		E957C79D24D2858F00743E7C /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		E9A726D424D0F20600AE1A78 /* CloneNetflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloneNetflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +166,7 @@
 				E957C79324D27D4C00743E7C /* Model */,
 				E9A726DD24D0F20600AE1A78 /* Preview Content */,
 				E957C79924D27E9800743E7C /* MovieDetailView.swift */,
+				E9278E0024D2DAC6009C9D43 /* CustomTapSwitcher.swift */,
 			);
 			path = CloneNetflix;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				E9A7270C24D0F61100AE1A78 /* GlobalHelpers.swift in Sources */,
 				E957C79E24D2858F00743E7C /* Episode.swift in Sources */,
 				E9A7270324D0F22300AE1A78 /* HomeView.swift in Sources */,
+				E9278E0124D2DAC6009C9D43 /* CustomTapSwitcher.swift in Sources */,
 				E9A7270E24D0F8DF00AE1A78 /* HomeVM.swift in Sources */,
 				E9A726DA24D0F20600AE1A78 /* ContentView.swift in Sources */,
 				E9A7270A24D0F56300AE1A78 /* StandardHomeMovie.swift in Sources */,

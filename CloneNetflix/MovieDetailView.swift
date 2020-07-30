@@ -43,11 +43,24 @@ struct MovieDetailView: View {
                         }
                         CurrentEpisodeInformation(movie: movie)
                         CastInfo(movie: movie)
+                        
+                        HStack(spacing: 60) {
+                            SmallVerticalButton(text: "내가 찜한 콘텐츠", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
+                                
+                            }
+                            SmallVerticalButton(text: "평가", isOnImage: "hand.thumbsup.fill", isOffImage: "hand.thumbsup", isOn: true) {
+                                
+                            }
+                            SmallVerticalButton(text: "공유", isOnImage: "square.and.arrow.up", isOffImage: "square.and.arrow.up", isOn: true) {
+                                
+                            }
+                            Spacer()
+                        }
                     }
                     .padding(.horizontal, 20)
+                    
+//                    CustomTapSwitcher()
                 }
-                
-                
                 Spacer()
             }
             .foregroundColor(.white)
@@ -60,6 +73,7 @@ struct MovieDetailView_Previews: PreviewProvider {
         MovieDetailView(movie: getRandomMovie())
     }
 }
+
 
 struct MoveInfoSubHeadline: View {
     var movie: Movie
