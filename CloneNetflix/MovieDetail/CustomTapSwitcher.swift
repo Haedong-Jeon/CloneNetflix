@@ -10,6 +10,7 @@ import SwiftUI
 struct CustomTapSwitcher: View {
     
     var taps: [CustomTab]
+    var movie: Movie
     @State private var currentTab: CustomTab = .episodes
     
     func widthForTab(_ tab: CustomTab) -> CGFloat {
@@ -35,7 +36,6 @@ struct CustomTapSwitcher: View {
                             })
                             .buttonStyle(PlainButtonStyle())
                             .frame(width: widthForTab(tab), height: 30)
-
                         }
                     }
                 }
@@ -46,20 +46,10 @@ struct CustomTapSwitcher: View {
                 case .trailers:
                     Text("예고 및 다른 영상")
                 case .more:
-                    Text("비슷한 콘텐츠")
+                    MoreLikeThis(movies: movie.moreLikeThisMovies!)
             }
         }
         .foregroundColor(.white)
-    }
-}
-
-struct CustomTapSwitcher_Previews: PreviewProvider {
-    static var previews: some View {
-        ZStack {
-            Color.black
-                .edgesIgnoringSafeArea(.all)
-            CustomTapSwitcher(taps: [.episodes, .trailers, .more])
-        }
     }
 }
 
@@ -67,4 +57,14 @@ enum CustomTab: String {
     case episodes = "회차"
     case trailers = "예고편 및 다른 영상"
     case more = "비슷한 콘텐츠"
+}
+
+struct CustomTapSwitcher_Previews: PreviewProvider {
+    static var previews: some View {
+        ZStack {
+            Color.black
+                .edgesIgnoringSafeArea(.all)
+            CustomTapSwitcher(taps: [.episodes, .trailers, .more], movie: getRandomMovie())
+        }
+    }
 }

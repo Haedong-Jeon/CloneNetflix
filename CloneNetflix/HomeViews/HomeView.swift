@@ -49,11 +49,7 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
-}
+
 
 struct TopRowButtons: View {
     var body: some View {
@@ -92,5 +88,11 @@ struct TopRowButtons: View {
         }
         .padding(.leading, 10)
         .padding(.trailing, 30)
+    }
+}
+
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
     }
 }

@@ -1,4 +1,4 @@
-//
+    //
 //  Movie.swift
 //  CloneNetflix
 //
@@ -26,6 +26,8 @@ struct Movie: Identifiable {
     // cast
     var creator: String
     var cast: String
+    
+    var moreLikeThisMovies: [Movie]?
     
     var episode: [Episode]?
     var promotionHeadline: String?
