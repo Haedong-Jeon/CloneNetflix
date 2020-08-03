@@ -44,7 +44,7 @@ struct CustomTapSwitcher: View {
                 case .episodes:
                     Text("회차")
                 case .trailers:
-                    Text("예고 및 다른 영상")
+                    TrailerList(trailers: movie.trailers)
                 case .more:
                     MoreLikeThis(movies: movie.moreLikeThisMovies!)
             }

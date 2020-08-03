@@ -58,7 +58,6 @@ struct MovieDetailView: View {
                         }
                     }
                     .padding(.horizontal, 20)
-                    
 //                    CustomTapSwitcher()
                 }
                 Spacer()
