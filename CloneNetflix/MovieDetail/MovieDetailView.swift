@@ -17,61 +17,96 @@ struct MovieDetailView: View {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             
-            VStack {
-                HStack {
+            ZStack {
+                VStack {
+                    HStack {
+                        Spacer()
+                        Button(action: {
+                            //닫기 버튼
+                        }, label: {
+                            Image(systemName: "xmark.circle")
+                                .font(.system(size: 28))
+                        })
+                    }
+                    .padding(.horizontal, 22)
+                    
+                    ScrollView(.vertical, showsIndicators: false) {
+                        VStack {
+                            StandardHomeMovie(movie: movie)
+                                .frame(width: screen.width / 2.5)
+                            
+                            MoveInfoSubHeadline(movie: movie)
+                            if movie.promotionHeadline != nil {
+                                Text(movie.promotionHeadline!)
+                                    .bold()
+                                    .font(.headline)
+                            }
+                            PlayButton(text: "Play", imageName: "play.fill", backgroundColor: .red) {
+                            
+                            }
+                            CurrentEpisodeInformation(movie: movie)
+                            CastInfo(movie: movie)
+                            
+                            HStack(spacing: 60) {
+                                SmallVerticalButton(text: "내가 찜한 콘텐츠", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
+                                    
+                                }
+                                SmallVerticalButton(text: "평가", isOnImage: "hand.thumbsup.fill", isOffImage: "hand.thumbsup", isOn: true) {
+                                    
+                                }
+                                SmallVerticalButton(text: "공유", isOnImage: "square.and.arrow.up", isOffImage: "square.and.arrow.up", isOn: true) {
+                                    
+                                }
+                                Spacer()
+                            }
+                        }
+                        .padding(.horizontal, 20)
+                    }
+                    CustomTapSwitcher(taps: [.episodes, .trailers, .more], movie: movie, showSeasonPicker: $showSeasonPicker, selectedSeason: $selectedSeason)
                     Spacer()
-                    Button(action: {
-                        //닫기 버튼
-                    }, label: {
-                        Image(systemName: "xmark.circle")
-                            .font(.system(size: 28))
-                    })
                 }
-                .padding(.horizontal, 22)
+                .foregroundColor(.white)
                 
-                ScrollView(.vertical, showsIndicators: false) {
-                    VStack {
-                        StandardHomeMovie(movie: movie)
-                            .frame(width: screen.width / 2.5)
-                        
-                        MoveInfoSubHeadline(movie: movie)
-                        if movie.promotionHeadline != nil {
-                            Text(movie.promotionHeadline!)
-                                .bold()
-                                .font(.headline)
-                        }
-                        PlayButton(text: "Play", imageName: "play.fill", backgroundColor: .red) {
-                        
-                        }
-                        CurrentEpisodeInformation(movie: movie)
-                        CastInfo(movie: movie)
-                        
-                        HStack(spacing: 60) {
-                            SmallVerticalButton(text: "내가 찜한 콘텐츠", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
-                                
-                            }
-                            SmallVerticalButton(text: "평가", isOnImage: "hand.thumbsup.fill", isOffImage: "hand.thumbsup", isOn: true) {
-                                
-                            }
-                            SmallVerticalButton(text: "공유", isOnImage: "square.and.arrow.up", isOffImage: "square.and.arrow.up", isOn: true) {
-                                
-                            }
+                if showSeasonPicker {
+                    Group {
+                        Color.black.opacity(0.9)
+                        VStack(spacing: 40) {
                             Spacer()
+                            ForEach(0..<(movie.numberOfSeasons ?? 0 )) { season in
+                                Button(action: {
+                                    self.selectedSeason = season + 1
+                                    self.showSeasonPicker = false
+                                }, label: {
+                                    Text("Season \(season + 1)")
+                                        .foregroundColor(selectedSeason == season + 1 ? .white : .gray)
+                                        .bold()
+                                        .font(selectedSeason == season + 1 ? .title : .title2)
+                                })
+                            }
+
+                            Spacer()
+                            
+                            Button(action: {
+                                showSeasonPicker = false
+                            }, label: {
+                                Image(systemName: "x.circle.fill")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 40))
+                                    .scaleEffect(x: 1.1)
+                            })
+                            .padding(.bottom, 30)
                         }
                     }
-                    .padding(.horizontal, 20)
-//                    CustomTapSwitcher()
+                    .edgesIgnoringSafeArea(.all)
                 }
-                Spacer()
             }
-            .foregroundColor(.white)
         }
     }
 }
 
 struct MovieDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetailView(movie: getRandomMovie())
+        MovieDetailView(movie: exampleMoive1)
     }
 }
 
