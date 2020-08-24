@@ -61,8 +61,8 @@ struct MovieDetailView: View {
                             }
                         }
                         .padding(.horizontal, 20)
+                        CustomTapSwitcher(taps: [.episodes, .trailers, .more], movie: movie, showSeasonPicker: $showSeasonPicker, selectedSeason: $selectedSeason)
                     }
-                    CustomTapSwitcher(taps: [.episodes, .trailers, .more], movie: movie, showSeasonPicker: $showSeasonPicker, selectedSeason: $selectedSeason)
                     Spacer()
                 }
                 .foregroundColor(.white)
