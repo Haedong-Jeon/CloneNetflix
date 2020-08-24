@@ -17,7 +17,6 @@ struct CustomTapSwitcher: View {
         let string = tab.rawValue
         return string.widthOfString(usingFont: .systemFont(ofSize: 16, weight: .bold))
     }
-    
     var body: some View {
         VStack {
             ScrollView(.horizontal, showsIndicators: false) {
@@ -42,7 +41,7 @@ struct CustomTapSwitcher: View {
             }
             switch currentTab {
                 case .episodes:
-                    Text("회차")
+                    Text("회차정보")
                 case .trailers:
                     TrailerList(trailers: movie.trailers)
                 case .more:
@@ -52,13 +51,11 @@ struct CustomTapSwitcher: View {
         .foregroundColor(.white)
     }
 }
-
 enum CustomTab: String {
     case episodes = "회차"
     case trailers = "예고편 및 다른 영상"
     case more = "비슷한 콘텐츠"
 }
-
 struct CustomTapSwitcher_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {

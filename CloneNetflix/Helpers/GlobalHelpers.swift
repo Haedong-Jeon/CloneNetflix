@@ -16,6 +16,9 @@ let exampleImageURL3: URL = URL(string: "https://picsum.photos/300/106")!
 var randomExampleImageURL: URL {
     return [exampleImageURL1, exampleImageURL2, exampleImageURL3].randomElement() ?? exampleImageURL3
 }
+var randomExampleImageURLString: String {
+    return ["https://picsum.photos/300/104", "https://picsum.photos/300/105", "https://picsum.photos/300/106"].randomElement() ?? "https://picsum.photos/300/106"
+}
 
 let exampleTrailer1 = Trailer(name: "season1 trailer", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
 let exampleTrailer2 = Trailer(name: "season2 trailer", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
@@ -73,8 +76,17 @@ let exampleEpisodeInfo4: CurrentEpisodeInfo = CurrentEpisodeInfo(episodeName: "�
 let exampleEpisodeInfo5: CurrentEpisodeInfo = CurrentEpisodeInfo(episodeName: "에피소드 1", description: "어쩌고 저쩌고 블라블라블라 내용 소개 가나다라마바사 아자차카타파하 그느드르 으즈츠츠블라블라 수리수리 마수리 웅앵잉앙킹챵챙총응지양지 부시 롸롸롸 음빠빠 움빠빠빠빠빠빠 기비비비그브그브 챙챙 구루구루 므브브브 우끼끼 촵촵 우끼우끼 블르 촵촵", season: 3, episode: 1)
 let exampleEpisodeInfo6: CurrentEpisodeInfo = CurrentEpisodeInfo(episodeName: "에피소드 1", description: "어쩌고 저쩌고 블라블라블라 내용 소개 가나다라마바사 아자차카타파하 그느드르 으즈츠츠블라블라 수리수리 마수리 웅앵잉앙킹챵챙총응지양지 부시 롸롸롸 음빠빠 움빠빠빠빠빠빠 기비비비그브그브 챙챙 구루구루 므브브브 우끼끼 촵촵 우끼우끼 블르 촵촵", season: 2, episode: 1)
 
+let episode1 = Episode(name: "First Episode", episodeNumber: 1, season: 1, thumbnailImageURLString: randomExampleImageURLString, description: "jqioewjpfqowijefpoqwjepofjsdlkamvakdsjflkjqwepiojfpqioweurioqweupoirjqpwoiejflkadsm;lavmlkasjdfio;jqpewiojrioqwueoirqpejwifojlakdjfkl;ajdl;jfoiqwejroiquwepoiruqwoiejflkajdfkljadospfj qierupoqiweuroiqoiewjfpaㅇ아ㅓ레ㅐ뱌ㅓ델ㅈ더렙", length: 53, videoURL: exampleVideoURL)
+let episode2 = Episode(name: "Second Episode", episodeNumber: 2, season: 1, thumbnailImageURLString:randomExampleImageURLString , description: "jqioewjpfqowijefpoqwjepofjsdlkamvakdsjflkjqwepiojfpqioweurioqweupoirjqpwoiejflkadsm;lavmlkasjdfio;jqpewiojrioqwueoirqpejwifojlakdjfkl;ajdl;jfoiqwejroiquwepoiruqwoiejflkajdfkljadospfj qierupoqiweuroiqoiewjfpaㅇ아ㅓ레ㅐ뱌ㅓ델ㅈ더렙", length: 53, videoURL: exampleVideoURL)
+let episode3 = Episode(name: "Third Episode", episodeNumber: 3, season: 1, thumbnailImageURLString: randomExampleImageURLString, description: "jqioewjpfqowijefpoqwjepofjsdlkamvakdsjflkjqwepiojfpqioweurioqweupoirjqpwoiejflkadsm;lavmlkasjdfio;jqpewiojrioqwueoirqpejwifojlakdjfkl;ajdl;jfoiqwejroiquwepoiruqwoiejflkajdfkljadospfj qierupoqiweuroiqoiewjfpaㅇ아ㅓ레ㅐ뱌ㅓ델ㅈ더렙", length: 53, videoURL: exampleVideoURL)
+let episode4 = Episode(name: "First Episode", episodeNumber: 4, season: 2, thumbnailImageURLString: randomExampleImageURLString, description: "jqioewjpfqowijefpoqwjepofjsdlkamvakdsjflkjqwepiojfpqioweurioqweupoirjqpwoiejflkadsm;lavmlkasjdfio;jqpewiojrioqwueoirqpejwifojlakdjfkl;ajdl;jfoiqwejroiquwepoiruqwoiejflkajdfkljadospfj qierupoqiweuroiqoiewjfpaㅇ아ㅓ레ㅐ뱌ㅓ델ㅈ더렙", length: 53, videoURL: exampleVideoURL)
+let episode5 = Episode(name: "First Episode", episodeNumber: 5, season: 2, thumbnailImageURLString: randomExampleImageURLString, description: "jqioewjpfqowijefpoqwjepofjsdlkamvakdsjflkjqwepiojfpqioweurioqweupoirjqpwoiejflkadsm;lavmlkasjdfio;jqpewiojrioqwueoirqpejwifojlakdjfkl;ajdl;jfoiqwejroiquwepoiruqwoiejflkajdfkljadospfj qierupoqiweuroiqoiewjfpaㅇ아ㅓ레ㅐ뱌ㅓ델ㅈ더렙", length: 53, videoURL: exampleVideoURL)
+let episode6 = Episode(name: "Second Episode", episodeNumber: 6, season: 2, thumbnailImageURLString:randomExampleImageURLString , description: "jqioewjpfqowijefpoqwjepofjsdlkamvakdsjflkjqwepiojfpqioweurioqweupoirjqpwoiejflkadsm;lavmlkasjdfio;jqpewiojrioqwueoirqpejwifojlakdjfkl;ajdl;jfoiqwejroiquwepoiruqwoiejflkajdfkljadospfj qierupoqiweuroiqoiewjfpaㅇ아ㅓ레ㅐ뱌ㅓ델ㅈ더렙", length: 53, videoURL: exampleVideoURL)
+let episode7 = Episode(name: "Third Episode", episodeNumber: 7, season: 3, thumbnailImageURLString: randomExampleImageURLString, description: "jqioewjpfqowijefpoqwjepofjsdlkamvakdsjflkjqwepiojfpqioweurioqweupoirjqpwoiejflkadsm;lavmlkasjdfio;jqpewiojrioqwueoirqpejwifojlakdjfkl;ajdl;jfoiqwejroiquwepoiruqwoiejflkajdfkljadospfj qierupoqiweuroiqoiewjfpaㅇ아ㅓ레ㅐ뱌ㅓ델ㅈ더렙", length: 53, videoURL: exampleVideoURL)
+let episode8 = Episode(name: "Second Episode", episodeNumber: 8, season: 3, thumbnailImageURLString:randomExampleImageURLString , description: "jqioewjpfqowijefpoqwjepofjsdlkamvakdsjflkjqwepiojfpqioweurioqweupoirjqpwoiejflkadsm;lavmlkasjdfio;jqpewiojrioqwueoirqpejwifojlakdjfkl;ajdl;jfoiqwejroiquwepoiruqwoiejflkajdfkljadospfj qierupoqiweuroiqoiewjfpaㅇ아ㅓ레ㅐ뱌ㅓ델ㅈ더렙", length: 53, videoURL: exampleVideoURL)
+let episode9 = Episode(name: "Third Episode", episodeNumber: 9, season: 1, thumbnailImageURLString: randomExampleImageURLString, description: "jqioewjpfqowijefpoqwjepofjsdlkamvakdsjflkjqwepiojfpqioweurioqweupoirjqpwoiejflkadsm;lavmlkasjdfio;jqpewiojrioqwueoirqpejwifojlakdjfkl;ajdl;jfoiqwejroiquwepoiruqwoiejflkajdfkljadospfj qierupoqiweuroiqoiewjfpaㅇ아ㅓ레ㅐ뱌ㅓ델ㅈ더렙", length: 53, videoURL: exampleVideoURL)
 
-
+let allEpisodes: [Episode] = [episode1, episode2, episode3, episode4, episode5, episode6, episode7, episode8, episode9]
 func getRandomMovie() -> Movie {
     let exampleMovieNum: Int = Int.random(in: 1 ... 7)
     switch exampleMovieNum {

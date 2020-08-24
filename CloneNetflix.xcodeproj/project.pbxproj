@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E908DF5724F3753400635BFE /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908DF5624F3753400635BFE /* EpisodeView.swift */; };
 		E9278E0124D2DAC6009C9D43 /* CustomTapSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9278E0024D2DAC6009C9D43 /* CustomTapSwitcher.swift */; };
 		E957C79A24D27E9800743E7C /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957C79924D27E9800743E7C /* MovieDetailView.swift */; };
 		E957C79E24D2858F00743E7C /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957C79D24D2858F00743E7C /* Episode.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E908DF5624F3753400635BFE /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
 		E9278E0024D2DAC6009C9D43 /* CustomTapSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTapSwitcher.swift; sourceTree = "<group>"; };
 		E957C79924D27E9800743E7C /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		E957C79D24D2858F00743E7C /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				E9278E0024D2DAC6009C9D43 /* CustomTapSwitcher.swift */,
 				E98A83E024D3E41B00D6E490 /* MoreLikeThis.swift */,
 				E9E6823C24D78ACE00084DA8 /* TrailerList.swift */,
+				E908DF5624F3753400635BFE /* EpisodeView.swift */,
 			);
 			path = MovieDetail;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				E9A7270E24D0F8DF00AE1A78 /* HomeVM.swift in Sources */,
 				E9A726DA24D0F20600AE1A78 /* ContentView.swift in Sources */,
 				E9A7270A24D0F56300AE1A78 /* StandardHomeMovie.swift in Sources */,
+				E908DF5724F3753400635BFE /* EpisodeView.swift in Sources */,
 				E9A7271024D10B8B00AE1A78 /* TopMoviePreview.swift in Sources */,
 				E9A7270824D0F4BC00AE1A78 /* Movie.swift in Sources */,
 				E98A83E124D3E41B00D6E490 /* MoreLikeThis.swift in Sources */,
