@@ -31,7 +31,11 @@ struct Movie: Identifiable {
     
     var episode: [Episode]?
     var movieType: MovieType {
-        return episode == nil ? MovieType.movie : MovieType.tvShow
+        if self.episode == nil {
+            return .movie
+        } else {
+            return .tvShow
+        }
     }
     var promotionHeadline: String?
     var trailers: [Trailer]

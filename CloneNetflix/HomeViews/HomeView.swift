@@ -25,7 +25,6 @@ struct HomeView: View {
             ScrollView(showsIndicators: false) {
                 LazyVStack {//메인 VStack
                     TopRowButtons(topRowSelection: $topRowSelection, homeGenre: $homeGenre, showGenreSelection: $showGenreSelection, showTopSelection: $showTopRowSelection)
-                    
                     TopMoviePreview(movie: getRandomMovie())
                         .frame(width: screen.width)
                         .padding(.top, -110)
@@ -44,8 +43,6 @@ struct HomeView: View {
         .foregroundColor(.white)
     }
 }
-
-
 
 struct TopRowButtons: View {
     @Binding var topRowSelection: HomeTopRow

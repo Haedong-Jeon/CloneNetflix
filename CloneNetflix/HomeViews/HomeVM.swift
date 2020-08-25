@@ -13,7 +13,6 @@ class HomeVM: ObservableObject {
         movies.keys.map {String($0)}
     }
     public func getMovie(forCat cat: String, andHomeRow homeRow: HomeTopRow) -> [Movie] {
-
         switch homeRow {
             case .home:
                 return movies[cat] ?? []
@@ -24,8 +23,6 @@ class HomeVM: ObservableObject {
             case .myList:
                 //TODO: - setup mylist
                 return movies[cat] ?? []
-                
-    
         }
         
     }
