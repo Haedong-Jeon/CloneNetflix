@@ -12,6 +12,7 @@ struct MovieDetailView: View {
     let screen: CGRect = UIScreen.main.bounds
     @State private var showSeasonPicker = false
     @State private var selectedSeason = 1
+    @Binding var movieDetailToShow: Movie?
     var body: some View {
         ZStack {
             Color.black
@@ -22,7 +23,7 @@ struct MovieDetailView: View {
                     HStack {
                         Spacer()
                         Button(action: {
-                            //닫기 버튼
+                            movieDetailToShow = nil
                         }, label: {
                             Image(systemName: "xmark.circle")
                                 .font(.system(size: 28))
@@ -106,7 +107,7 @@ struct MovieDetailView: View {
 
 struct MovieDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetailView(movie: exampleMoive1)
+        MovieDetailView(movie: exampleMoive1, movieDetailToShow: .constant(nil))
     }
 }
 
