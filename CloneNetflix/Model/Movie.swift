@@ -30,6 +30,9 @@ struct Movie: Identifiable {
     var moreLikeThisMovies: [Movie]?
     
     var episode: [Episode]?
+    var movieType: MovieType {
+        return episode == nil ? MovieType.movie : MovieType.tvShow
+    }
     var promotionHeadline: String?
     var trailers: [Trailer]
     var numberOfSeasonsDisplay: String {
@@ -64,4 +67,9 @@ struct CurrentEpisodeInfo: Hashable, Equatable {
     var description: String
     var season: Int
     var episode: Int
+}
+
+enum MovieType {
+    case movie
+    case tvShow
 }

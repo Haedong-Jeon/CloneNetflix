@@ -27,6 +27,7 @@
 		E9A7271024D10B8B00AE1A78 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7270F24D10B8B00AE1A78 /* TopMoviePreview.swift */; };
 		E9A7271224D1169D00AE1A78 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7271124D1169D00AE1A78 /* SmallVerticalButton.swift */; };
 		E9A7271424D133BF00AE1A78 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7271324D133BF00AE1A78 /* PlayButton.swift */; };
+		E9CF2AC424F4FC91003BEA7C /* homeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF2AC324F4FC91003BEA7C /* homeStack.swift */; };
 		E9E6823424D7853200084DA8 /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E6823324D7853200084DA8 /* Trailer.swift */; };
 		E9E6823624D7859C00084DA8 /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E6823524D7859C00084DA8 /* SwiftUIVideoView.swift */; };
 		E9E6823B24D7885C00084DA8 /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E6823A24D7885C00084DA8 /* VideoPreviewImage.swift */; };
@@ -76,6 +77,7 @@
 		E9A7270F24D10B8B00AE1A78 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		E9A7271124D1169D00AE1A78 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 		E9A7271324D133BF00AE1A78 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		E9CF2AC324F4FC91003BEA7C /* homeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeStack.swift; sourceTree = "<group>"; };
 		E9E6823324D7853200084DA8 /* Trailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
 		E9E6823524D7859C00084DA8 /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
 		E9E6823A24D7885C00084DA8 /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			children = (
 				E9A7270224D0F22300AE1A78 /* HomeView.swift */,
 				E9A7270D24D0F8DF00AE1A78 /* HomeVM.swift */,
+				E9CF2AC324F4FC91003BEA7C /* homeStack.swift */,
 			);
 			path = HomeViews;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				E9E6823D24D78ACE00084DA8 /* TrailerList.swift in Sources */,
 				E9A7271224D1169D00AE1A78 /* SmallVerticalButton.swift in Sources */,
 				E9A7271424D133BF00AE1A78 /* PlayButton.swift in Sources */,
+				E9CF2AC424F4FC91003BEA7C /* homeStack.swift in Sources */,
 				E9E6823624D7859C00084DA8 /* SwiftUIVideoView.swift in Sources */,
 				E957C79A24D27E9800743E7C /* MovieDetailView.swift in Sources */,
 			);
