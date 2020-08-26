@@ -13,8 +13,8 @@ struct Movie: Identifiable {
     var thumbnailURL: URL
     
     var cateogires: [String]
-    
-    
+    var genre: HomeGenre = .allGenre
+
     //movie detail view
     var year: Int
     var rating: String
