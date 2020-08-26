@@ -8,8 +8,39 @@
 import SwiftUI
 
 struct ContentView: View {
+    init() {
+        UITabBar.appearance().isTranslucent = false
+        UITabBar.appearance().barTintColor = UIColor.black
+    }
     var body: some View {
-        Text("Hello, world!").padding()
+        TabView {
+            HomeView()
+                .tabItem{
+                    Image(systemName:"house")
+                    Text("home")
+                }.tag(0)
+            Text("Search")
+                .tabItem{
+                    Image(systemName:"magnifyingglass")
+                    Text("2")
+                }.tag(1)
+            Text("downloads")
+                .tabItem{
+                    Image(systemName:"arrow.down.to.line.alt")
+                    Text("2")
+                }.tag(2)
+            Text("comming soon")
+                .tabItem{
+                    Image(systemName:"play.rectangle")
+                    Text("2")
+                }.tag(3)
+            Text("more")
+                .tabItem{
+                    Image(systemName:"equal")
+                    Text("2")
+                }.tag(4)
+        }
+        .accentColor(.white)
     }
 }
 

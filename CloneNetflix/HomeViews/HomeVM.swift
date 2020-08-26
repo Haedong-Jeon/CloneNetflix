@@ -19,9 +19,9 @@ class HomeVM: ObservableObject {
             case .home:
                 return movies[cat] ?? []
             case .movies:
-                return (movies[cat] ?? []).filter({($0.movieType == .movie) && ($0.genre = genre)})
+                return (movies[cat] ?? []).filter({($0.movieType == .movie) && ($0.genre == genre)})
             case .tvShows:
-                return (movies[cat] ?? []).filter({($0.movieType == .tvShow) && ($0.genre = genre)})
+                return (movies[cat] ?? []).filter({($0.movieType == .tvShow) && ($0.genre == genre)})
             case .myList:
                 //TODO: - setup mylist
                 return movies[cat] ?? []
