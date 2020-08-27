@@ -22,28 +22,27 @@ struct ContentView: View {
             Text("Search")
                 .tabItem{
                     Image(systemName:"magnifyingglass")
-                    Text("2")
+                    Text("search")
                 }.tag(1)
             Text("downloads")
                 .tabItem{
                     Image(systemName:"arrow.down.to.line.alt")
-                    Text("2")
+                    Text("downloads")
                 }.tag(2)
             Text("comming soon")
                 .tabItem{
                     Image(systemName:"play.rectangle")
-                    Text("2")
+                    Text("comming soon")
                 }.tag(3)
             Text("more")
                 .tabItem{
                     Image(systemName:"equal")
-                    Text("2")
+                    Text("more")
                 }.tag(4)
         }
         .accentColor(.white)
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
