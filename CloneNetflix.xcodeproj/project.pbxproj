@@ -39,6 +39,7 @@
 		E9E7BDE42500A44000092894 /* SearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E7BDE32500A43F00092894 /* SearchVM.swift */; };
 		E9E7BDE82505A9A600092894 /* GenerateMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E7BDE72505A9A600092894 /* GenerateMovies.swift */; };
 		E9E7BDEA25074AAB00092894 /* PopularMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E7BDE925074AAB00092894 /* PopularMovieView.swift */; };
+		E9E7BDEC2507524500092894 /* SearchResultGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E7BDEB2507524500092894 /* SearchResultGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		E9E7BDE32500A43F00092894 /* SearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVM.swift; sourceTree = "<group>"; };
 		E9E7BDE72505A9A600092894 /* GenerateMovies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateMovies.swift; sourceTree = "<group>"; };
 		E9E7BDE925074AAB00092894 /* PopularMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieView.swift; sourceTree = "<group>"; };
+		E9E7BDEB2507524500092894 /* SearchResultGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				E9E7BDE12500A3D400092894 /* SearchView.swift */,
 				E9E7BDE925074AAB00092894 /* PopularMovieView.swift */,
 				E9E7BDE32500A43F00092894 /* SearchVM.swift */,
+				E9E7BDEB2507524500092894 /* SearchResultGrid.swift */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				E9A7270A24D0F56300AE1A78 /* StandardHomeMovie.swift in Sources */,
 				E908DF5724F3753400635BFE /* EpisodeView.swift in Sources */,
 				E9A7271024D10B8B00AE1A78 /* TopMoviePreview.swift in Sources */,
+				E9E7BDEC2507524500092894 /* SearchResultGrid.swift in Sources */,
 				E95D76B124F7A53400C70CE7 /* ActivityIndicator.swift in Sources */,
 				E9A7270824D0F4BC00AE1A78 /* Movie.swift in Sources */,
 				E98A83E124D3E41B00D6E490 /* MoreLikeThis.swift in Sources */,

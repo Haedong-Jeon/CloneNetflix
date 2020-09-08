@@ -32,7 +32,18 @@ struct SearchView: View {
                        Text("Empty")
                         .bold()
                         .padding(.top, 150)
-                    } else if vm.viewState == .ready && !vm.isShowingPopularMovies{ Text("Ready")
+                    } else if vm.viewState == .ready && !vm.isShowingPopularMovies{
+                        
+                        VStack {
+                            HStack {
+                                Text("Movies & TV")
+                                    .bold()
+                                    .font(.title3)
+                                    .padding(.leading, 12)
+                                Spacer()
+                            }
+                            SearchResultGrid(movies: vm.searchResults, movieDetailToShow: $movieDetailToShow)
+                        }
                     }
                 }
                 Spacer()
