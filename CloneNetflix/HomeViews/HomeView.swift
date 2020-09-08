@@ -41,7 +41,6 @@ struct HomeView: View {
             if showTopRowSelection {
                 Group {
                     Color.black.opacity(0.9)
-                    
                     VStack(spacing: 40) {
                         Spacer()
                         ForEach(HomeTopRow.allCases, id: \.self) { topRow in
@@ -144,6 +143,7 @@ struct TopRowButtons: View {
                     Button(action: {
                         topRowSelection = .movies
                     }, label: {
+                        Text("say anything")
                         Text("영화")
                     })
                     .buttonStyle(PlainButtonStyle())

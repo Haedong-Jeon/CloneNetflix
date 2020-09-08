@@ -33,6 +33,7 @@ struct SearchBar: View {
                     .onTapGesture(perform: {
                         isEditing = true
                     })
+                    .animation(.default)
                 
                 if !text.isEmpty {
                     if isLoading {
@@ -46,7 +47,6 @@ struct SearchBar: View {
                         })
                         .padding(.trailing, 32)
                         .frame(width: 35, height: 35)
-                        
                     } else {
                         Button(action: {
                             text = ""
@@ -58,7 +58,6 @@ struct SearchBar: View {
                         .padding(.trailing, 18)
                     }
                 }
-                
                 if isEditing {
                     Button(action: {
                         text = ""
@@ -69,20 +68,18 @@ struct SearchBar: View {
                             .foregroundColor(.white)
                     })
                     .padding(.trailing, 10)
+                    .transition(.move(edge: .trailing))
+                    .animation(.default)
                 }
-                
-                
             }
         }
     }
 }
-
 struct SearchBar_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
-            
             SearchBar(text: .constant(""), isLoading: .constant(false))
                 .padding()
         }
