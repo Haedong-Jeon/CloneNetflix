@@ -40,7 +40,7 @@ class SearchVM: ObservableObject {
                 self.setViewState(to: .empty)
             } else {
                 //ready view
-                let movies = generateMovies(21)
+                let movies = exampleMovies1
                 self.searchResults = movies
                 self.setViewState(to: .ready)
             }

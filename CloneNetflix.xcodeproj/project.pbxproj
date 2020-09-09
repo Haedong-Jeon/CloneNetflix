@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		E908DF5724F3753400635BFE /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908DF5624F3753400635BFE /* EpisodeView.swift */; };
 		E9278E0124D2DAC6009C9D43 /* CustomTapSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9278E0024D2DAC6009C9D43 /* CustomTapSwitcher.swift */; };
+		E9554BB725089CAF00B419C6 /* CommingSoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9554BB625089CAF00B419C6 /* CommingSoon.swift */; };
+		E9554BBB25089DA700B419C6 /* NotificationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9554BBA25089DA700B419C6 /* NotificationBar.swift */; };
+		E9554BBD2508A1B400B419C6 /* CommingSoonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9554BBC2508A1B400B419C6 /* CommingSoonRow.swift */; };
 		E957C79A24D27E9800743E7C /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957C79924D27E9800743E7C /* MovieDetailView.swift */; };
 		E957C79E24D2858F00743E7C /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957C79D24D2858F00743E7C /* Episode.swift */; };
 		E95D76AC24F79B2D00C70CE7 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D76AB24F79B2D00C70CE7 /* SearchBar.swift */; };
@@ -62,6 +65,9 @@
 /* Begin PBXFileReference section */
 		E908DF5624F3753400635BFE /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
 		E9278E0024D2DAC6009C9D43 /* CustomTapSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTapSwitcher.swift; sourceTree = "<group>"; };
+		E9554BB625089CAF00B419C6 /* CommingSoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommingSoon.swift; sourceTree = "<group>"; };
+		E9554BBA25089DA700B419C6 /* NotificationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBar.swift; sourceTree = "<group>"; };
+		E9554BBC2508A1B400B419C6 /* CommingSoonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommingSoonRow.swift; sourceTree = "<group>"; };
 		E957C79924D27E9800743E7C /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		E957C79D24D2858F00743E7C /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		E95D76AB24F79B2D00C70CE7 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
@@ -126,6 +132,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9554BB925089D9500B419C6 /* CommingSoon */ = {
+			isa = PBXGroup;
+			children = (
+				E9554BB625089CAF00B419C6 /* CommingSoon.swift */,
+				E9554BBC2508A1B400B419C6 /* CommingSoonRow.swift */,
+				E9554BBA25089DA700B419C6 /* NotificationBar.swift */,
+			);
+			path = CommingSoon;
+			sourceTree = "<group>";
+		};
 		E957C79324D27D4C00743E7C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +235,7 @@
 				E957C79724D27E2700743E7C /* HomeViews */,
 				E9A726D724D0F20600AE1A78 /* CloneNetflixApp.swift */,
 				E9A726D924D0F20600AE1A78 /* ContentView.swift */,
+				E9554BB925089D9500B419C6 /* CommingSoon */,
 				E9E6823924D787B100084DA8 /* VideoPlayer */,
 				E957C79624D27DBC00743E7C /* Helpers */,
 				E9A726DB24D0F20600AE1A78 /* Assets.xcassets */,
@@ -405,10 +422,13 @@
 				E9A7270C24D0F61100AE1A78 /* GlobalHelpers.swift in Sources */,
 				E9E7BDE82505A9A600092894 /* GenerateMovies.swift in Sources */,
 				E9E7BDE42500A44000092894 /* SearchVM.swift in Sources */,
+				E9554BBB25089DA700B419C6 /* NotificationBar.swift in Sources */,
 				E95D76AF24F79EB200C70CE7 /* Colors.swift in Sources */,
 				E9E6823424D7853200084DA8 /* Trailer.swift in Sources */,
 				E957C79E24D2858F00743E7C /* Episode.swift in Sources */,
+				E9554BB725089CAF00B419C6 /* CommingSoon.swift in Sources */,
 				E9E7BDE22500A3D400092894 /* SearchView.swift in Sources */,
+				E9554BBD2508A1B400B419C6 /* CommingSoonRow.swift in Sources */,
 				E9A7270324D0F22300AE1A78 /* HomeView.swift in Sources */,
 				E9278E0124D2DAC6009C9D43 /* CustomTapSwitcher.swift in Sources */,
 				E9E6823B24D7885C00084DA8 /* VideoPreviewImage.swift in Sources */,
