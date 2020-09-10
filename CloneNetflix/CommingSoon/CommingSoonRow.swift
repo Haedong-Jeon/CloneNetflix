@@ -18,8 +18,8 @@ struct CommingSoonRow: View {
     }
     var body: some View {
         VStack {
-//            VideoPlayer(player: player)
-            Color.blue
+            VideoPlayer(player: player)
+//            Color.blue
                 .frame(height: 200)
             VStack {
                 HStack {

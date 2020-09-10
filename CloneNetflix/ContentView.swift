@@ -29,7 +29,8 @@ struct ContentView: View {
                     Image(systemName:"arrow.down.to.line.alt")
                     Text("downloads")
                 }.tag(2)
-            Text("comming soon")
+//            Text("comming soon")
+            CommingSoon()
                 .tabItem{
                     Image(systemName:"play.rectangle")
                     Text("comming soon")
